@@ -1,0 +1,13 @@
+<% @posts.each do |post| %>
+  <article>
+    <h2><%= link_to post.title, post %></h2>
+    <span>
+      Posted <time datetime= <%= post.created_at.strftime('%D') %> pubdate><%= time_ago_in_words post.created_at %> ago
+    </span>
+    <p><%= post.text %></p>
+  </article>
+<% end %>
+
+<p>
+  <%= link_to "New Post", new_post_path %>
+</p>

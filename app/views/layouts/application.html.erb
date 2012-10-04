@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mark and Will Make A Band</title>
+  <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="welcome">
+			<header>
+				<h1>Mark And Will</h1>
+			</header>
+			<div class="content">
+				<nav>
+					<ul>
+						<li class="navlink js_sticky"><a href="#blog" class="anchorLink ">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div name="blog" id="blog">
+			<div class="content">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/assets/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="/assets/jquery.anchor.js"></script>
+</body>
+</html>
