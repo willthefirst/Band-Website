@@ -4,13 +4,11 @@ var BLOG = {
 		var stickyTop, stickyText;
 
 		var setTops = function() {
-			console.log('resetTop');
 			stickyTop = ($('.js_sticky').offset().top + 120);
 			stickyText = stickyTop - 45;
 		};
 
 		setTops();
-		console.log(stickyTop);
 
 		$(window).scroll(function() {
 			var windowTop = $(window).scrollTop();
@@ -34,7 +32,7 @@ var BLOG = {
 					position: 'fixed',
 					top: '35px',
 					left: '50%',
-					'margin-left': '-55px'
+					'margin-left': '-51px'
 				});
 			}
 

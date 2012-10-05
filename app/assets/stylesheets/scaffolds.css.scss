@@ -1,13 +1,41 @@
+/* @license
+ * MyFonts Webfont Build ID 2378935, 2012-10-05T17:56:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Calluna Regular by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/calluna/regular/
+ * Copyright: &#x00A9; 2009 exljbris Font Foundry. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2378935
+ * 
+ * © 2012 Bitstream Inc
+*/
+ 
+
+@font-face {
+    font-family: 'Calluna-Regular';
+    src: url(font-path('244cb7_0_0-webfont.eot') + "?#iefix") format('embedded-opentype'),
+           url(font-path('244cb7_0_0-webfont.woff')) format('woff'),
+           url(font-path('244cb7_0_0-webfont.ttf'))  format('truetype'),
+           url(font-path('244cb7_0_0-webfont.svg') + "#MyFont") format('svg');
+}
+
 body {
   background-color: #fff;
-  color: #333;
-  font-family: 'Cabin', sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
+
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -19,13 +47,20 @@ pre {
 }
 
 a {
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  transition: all .1s linear;
   color: #000;
+  text-decoration: none;
+
   &:visited {
-    color: #666;
+    color: #000;
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #a5a5a5;
+    background-color: none;
   }
 }
 

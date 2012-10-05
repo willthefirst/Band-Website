@@ -1,6 +1,6 @@
 <h1><%= @post.title %></h1>
 <p>
-	<%= @post.text %>
+	<%= @post.text.html_safe %>
 </p>
 <h2>Comments</h2>
 <% @post.comments.each do |comment| %>
