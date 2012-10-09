@@ -56,12 +56,8 @@ ActiveRecord::Schema.define(:version => 20121006014558) do
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "text"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "subscribers", :force => true do |t|

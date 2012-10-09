@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -34,7 +35,7 @@ gem 'activeadmin'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+# gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
