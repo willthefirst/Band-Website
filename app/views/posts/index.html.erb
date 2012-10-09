@@ -2,7 +2,7 @@
   <article>
     <h2><%= link_to post.title, post %></h2>
     <div class="postdate">
-      Posted <time datetime= <%= post.created_at.strftime('%D') %> pubdate><%= time_ago_in_words post.created_at %> ago
+      Posted <time datetime="<%= post.created_at.strftime('%F') %>"><%= time_ago_in_words post.created_at %></time> ago
     </div>
     <p><%= post.text.html_safe %></p>
   </article>

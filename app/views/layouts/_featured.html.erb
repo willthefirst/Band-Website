@@ -1,0 +1,7 @@
+<div class="subscribe cf">
+	<p>If you like us, share your email:</p>
+	<%= form_tag('/subscribe', :id => 'subscribe', :remote => 'true') do %>
+	    	<%= email_field_tag 'email', 'your@email.com', :class => "subscribe_form", :autofocus => 'autofocus' %>
+	    	<%= button_tag ">", :form => 'subscribe' %>
+	<% end %>
+</div>

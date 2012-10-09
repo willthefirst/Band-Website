@@ -1,7 +1,8 @@
-<p>If you like us, share your email:</p>
-
-<form id="subscribe"  action="/subscribe" method:"post">
-		<input class="subscribe" label="email"type="email" value="your@email.com" autofocus="autofocus">
-		<button type="submit" form="subscribe">>></button>
-</form>
-
+<section id="featured">
+	<p>If you like us, share your email:</p>
+	<%= form('/subscribe', :id => 'subscribe', :remote => 'true') do %>
+	   <!--  <input class="subscribe" label="email" type="email" value="your@email.com" autofocus="autofocus"> -->
+	    	<%= email_field_tag 'email', 'your@email.com', :class => "subscribe", :autofocus => 'autofocus' %>
+	    	<%= button_tag ">" %>
+	<% end %>
+</section>

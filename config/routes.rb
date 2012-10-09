@@ -11,7 +11,7 @@ Band::Application.routes.draw do
     resources :comments 
   end
 
-  match '/subscribe', to: 'subscribers#new'
+  match '/subscribe', to: 'subscribers#create'
   
   root :to => 'posts#index'
   # The priority is based upon order of creation:
