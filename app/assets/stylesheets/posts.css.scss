@@ -13,10 +13,18 @@ article {
 	margin-bottom: 10px;
 	box-align: border-box;
 	padding-bottom: 10px;
+	text-align: center;
 
 	p {
 		font-size: 18px;
 		line-height: 26px;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+
+	img {
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }
 
