@@ -23,8 +23,13 @@ article {
 	}
 
 	img {
-		width: 100%;
+		max-height: 800px;
 		margin-bottom: 30px;
+	}
+
+	embed {
+		margin: auto;
+		display: block;
 	}
 }
 
